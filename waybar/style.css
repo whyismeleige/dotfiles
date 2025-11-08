@@ -1,0 +1,56 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "SF Pro Display","JetBrainsMono Nerd Font", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @on_surface;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: @on_surface;
+}
+
+#window{
+    color: @on_primary_fixed;
+}
+
+#workspaces button {
+    padding: 5px 10px;
+    margin: 10px 2px;
+    border-radius: 10px;
+    background: @on_primary_container;
+    color: @primary_container;
+}
+
+#workspaces button.visible {
+    border-radius: 100px;
+    padding: 5px 20px;
+    color: @on_primary_container;
+    background: @primary_container;
+}
+
+
+#workspaces button.focused {
+    background: @primary;
+    border-bottom: 3px solid white;
+}
+
+#clock, #battery, #pulseaudio, #network, #cpu {
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 100px;
+    background: @on_primary_container;
+    color: @primary_container;
+}
